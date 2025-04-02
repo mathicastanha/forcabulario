@@ -51,7 +51,7 @@ O jogo “Forcabulário" tem o foco em ajudar  estudantes de inglês, em um nív
     </tr>
     <tr>
         <th>
-            PPúblico-alvo:  
+            Público-alvo:  
         </th>
         <th>
              Pessoas que já possuem conhecimento básico em outro idioma.

@@ -1,5 +1,5 @@
 # forcabulário
-Um jogo de forca para terminal em swift feito para aprender palavras novas em inglês
+O jogo “Forcabulário" tem o foco em ajudar  estudantes de inglês, em um nível intermediário, a estenderem seu vocabulário. Se resume a um jogo de forca com palavras em inglês, tendo níveis e temas distintos para serem explorados pelo usuário.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,15 +9,42 @@ Um jogo de forca para terminal em swift feito para aprender palavras novas em in
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <img src="https://github.com/user-attachments/assets/36567546-b3fe-4ba2-839c-030e60722d00" width="800px">
+    <img src="https://github.com/user-attachments/assets/36567546-b3fe-4ba2-839c-030e60722d00" width="800px">  
 </body>
 </html>
 
+  <br>
+  <br>
+  <br>
 
-#
+<table>
+    <tr>
+        <th>
+         classificação indicativa
+        </th>
+        <th>
+            12+
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Plataforma
+        </th>
+        <th>
+            Terminal MacOs
+        </th>
+    </tr>
+    <tr>
+        <th>
+            PPúblico-alvo:  
+        </th>
+        <th>
+             Pessoas que já possuem conhecimento básico em outro idioma.
+        </th>
+    </tr> 
+</table>
 
-
-## escolha entre diferentes temas e teste seu conhecimento
+## escolha entre 3 diferentes temas e teste seu conhecimento 
 
 <!DOCTYPE html>
 <html lang="en">

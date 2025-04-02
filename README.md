@@ -26,7 +26,9 @@ O jogo “Forcabulário" tem o foco em ajudar  estudantes de inglês, em um nív
     <img src="https://github.com/user-attachments/assets/9ef1a5fc-0c57-4053-9d94-433561542c1b" width="400px">
 </body>
 </html>
-
+<br>
+<br>
+<br>
 ### 
 <table>
     <tr>

@@ -13,10 +13,21 @@ O jogo “Forcabulário" tem o foco em ajudar  estudantes de inglês, em um nív
 </body>
 </html>
 
-  <br>
-  <br>
-  <br>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <img src="https://github.com/user-attachments/assets/89719208-c053-4f02-aa61-52e0e99784f1" width="400px">
+    <img src="https://github.com/user-attachments/assets/9ef1a5fc-0c57-4053-9d94-433561542c1b" width="400px">
+</body>
+</html>
+
+### 
 <table>
     <tr>
         <th>
@@ -43,23 +54,5 @@ O jogo “Forcabulário" tem o foco em ajudar  estudantes de inglês, em um nív
         </th>
     </tr> 
 </table>
-
-## escolha entre 3 diferentes temas e teste seu conhecimento 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <img src="https://github.com/user-attachments/assets/89719208-c053-4f02-aa61-52e0e99784f1" width="400px">
-    <img src="https://github.com/user-attachments/assets/9ef1a5fc-0c57-4053-9d94-433561542c1b" width="400px">
-</body>
-</html>
-
-### 
-
 
 

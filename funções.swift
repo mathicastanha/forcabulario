@@ -1,6 +1,6 @@
 import Foundation
 
-
+//telas do jogo
 let telaForca1 = #"""
             ______________
               |        |
@@ -187,6 +187,8 @@ let menu2 = #"""
                       
 """#
 
+////listas de palavras que serão usadas como gabarito
+
 //listas comidas
 var p1Facil : [String] = ["APPLE", "OLIVE", "MANGO", "BACON", "LEMON", "HONEY", "PASTA", "CARROT", "TOAST", "SUGAR"]
 var p1Dificil : [String] = ["steak", "pepper", "beets", "peach", "cherry", "bread", "salmon", "curry", "cassava", "chops"]
@@ -226,20 +228,18 @@ func escolherPalavra() -> String {
     } else if dificuldadeEscolhida == "2" && temas == "3" {
         listaEscolhida = p3Dificil
     } else {
-        print("Diego, para de tentar quebrar o código, boa sorte agora com essa sua palavra")
-        return "pneumonoultramicroscopicsilicovolcanoconiosis"
+        print("Para de tentar quebrar o código, boa sorte agora com essa sua palavra") //caso o usuario nao digite uma opcao valida ele recebe essa mensagem
+        return "pneumonoultramicroscopicsilicovolcanoconiosis" // e essa palavra é retornada
     }
     return listaEscolhida.randomElement() ?? ""
 }
 
-//permite com que o usuario digite apenas uma letra por vez
+//funcao para ler o input do usuario e bloquear de ser mais de um caracter 
+
 func digitarLetra() -> Character? {
     print("\n\nescreva uma letra ")
     if let letraUsuario = readLine(), letraUsuario.count == 1 {
-        let entrada = Character(letraUs
-                                
-                                
-                                uario.uppercased())
+        let entrada = Character(letraUsuario.uppercased())
         return entrada
     } else {
         print("calma lá, apenas uma letra por vez")
@@ -247,6 +247,7 @@ func digitarLetra() -> Character? {
     }
 }
 
+//funcao para rodar o jogo
 func jogarForca() {
     
     
@@ -256,7 +257,7 @@ func jogarForca() {
     //print(palavraSalva)
     var contadorErros = 0
     
-    while contadorErros < 6 {
+    while contadorErros < 6 { //looping gira em torno de um contador de erros
         
         for c in resultadoFinal {
             print(c, terminator:" ")
@@ -264,30 +265,30 @@ func jogarForca() {
         
         var letras = digitarLetra() ?? "1"
         
-        if letras.isLetter {
+        if letras.isLetter { //verifica se o input do usuario é uma letra
             
-            if palavraSalva.contains(letras) == false {
+            if palavraSalva.contains(letras) == false { //caso a letra inputada nao esteja na palavraSalva(Gabarito) o usuario errou, entao o contador de erros aumenta em 1
                 print("sinto muito, a palavra não contem essa letra")
                 contadorErros += 1
             }
             else {
-                if tentativas.contains(letras) {
+                if tentativas.contains(letras) { //caso a letra inputada esteja na palavraSalva(Gabarito) primeiro é verificado se o usuario ja digitou essa letra
                     print("você já tentou essa letra")
                 }
                 else {
-                    for (index, c) in palavraSalva.enumerated() {
+                    for (index, c) in palavraSalva.enumerated() { //então o for identifica o indice da palavra que conetm aquela letra
                         if c == (letras) {
                             resultadoFinal[index] = c
                         }
                     }
-                    tentativas += "(\(letras))"
+                    tentativas += "(\(letras))" //aqui sao adicionadas as letras que o usuario ja acertou
                 }
             }
-            if resultadoFinal.contains("_") == false {
+            if resultadoFinal.contains("_") == false { //caso nao tenham mais _ na palavra, o usuario vence
                 print(telaVitoria)
                 break
             }
-            switch contadorErros {
+            switch contadorErros { //switchcase para imprimir as telas de forca de acordo com os erros do usuario
             case 1:
                 print(telaForca1)
             case 2:
